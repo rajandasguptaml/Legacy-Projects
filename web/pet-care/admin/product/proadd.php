@@ -315,7 +315,7 @@ html {
         }
     ?>
     
-    <fieldset>
+
       
         <form action="" method="post">
             <table>
@@ -363,10 +363,7 @@ html {
                             
                 </tr>
                 
-				
-				
-
-                
+			
                 <tr>
 						<td><span>Product Details </span></td>
 						<td>:<textarea name="bio"></textarea>
@@ -377,12 +374,9 @@ html {
 						<td align="center" colspan="2"><input type="submit" name="submit" value="UPDATE"></td>
 				</tr>
 
-
-
             </table>
         </form>
-        
-    </fieldset>
+
    </div>
     </div>
   </div>

@@ -74,7 +74,7 @@ html {
   display: inline-block; 
   padding: 10px;
   color: white;
-  background-color: #000;
+  background-color: #474e5d;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -111,10 +111,11 @@ html {
 
 <body>
 
-<button class="button button2"><a href="login.php"> <b>USER</b></a></button>
-<button class="button button1"><a href="dashboard.php"> <b>ADMIN</b> </a> </button>
-<button class="button button2"><a href="dashdoctor.php"> <b>DOCTOR</b></a></button>
-<button class="button button2"><a href="dasheditor.php"> <b>EDITOR</b></a></button>
+<button class="button button1"><a href=".\log\index.php"> <b>LOG IN</b></a></button>
+<button class="button button1"><a href="dashuser.php"> <b>USER</b></a></button>
+<button class="button button2"><a href="dashboard.php"> <b>ADMIN</b> </a> </button>
+<button class="button button3"><a href="dashdoctor.php"> <b>DOCTOR</b></a></button>
+<button class="button button4"><a href="dasheditor.php"> <b>EDITOR</b></a></button>
 
 
 

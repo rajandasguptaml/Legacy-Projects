@@ -315,7 +315,7 @@ html {
         }
     ?>
     
-    <fieldset>
+
       
         <form action="" method="post">
             <table>
@@ -371,8 +371,7 @@ html {
 
             </table>
         </form>
-        
-    </fieldset>
+
    </div>
     </div>
   </div>
