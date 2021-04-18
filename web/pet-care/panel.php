@@ -111,7 +111,7 @@ html {
 
 <body>
 
-<button class="button button1"><a href=".\log\index.php"> <b>LOG IN</b></a></button>
+<button class="button button1"><a href=".\log\login.php"> <b>LOG IN</b></a></button>
 <button class="button button1"><a href="dashuser.php"> <b>USER</b></a></button>
 <button class="button button2"><a href="dashboard.php"> <b>ADMIN</b> </a> </button>
 <button class="button button3"><a href="dashdoctor.php"> <b>DOCTOR</b></a></button>
