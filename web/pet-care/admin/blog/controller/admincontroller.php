@@ -92,5 +92,14 @@
         $result = get($query) ;
         return $result ;
     }
+	
+	function checkUsernamee($bname){
+		$query = "select * from blogp where bname='$bname'";
+		$result=get($query);
+		if(count($result) > 0){
+			return "false";
+		}
+		return "true";
+	}
     
 ?>
