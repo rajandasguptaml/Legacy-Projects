@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
     <title>CV Input Form</title>
     <style>
@@ -161,6 +164,7 @@
         return flag;
         }
             </script>
+            
 
 </head>
 <body>
@@ -169,7 +173,7 @@
         <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
             <h3></h3>
             <div class="card">
-                <h5 class="text-center mb-4">Input Data For Resume</h5>
+                <h3 class="text-center mb-4"><b> Input Data For Resume</b></h3>
                 <form class="form-card" onsubmit="event.preventDefault()">
                     <div class="row justify-content-between text-left">
                         <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Name<span class="text-danger"> *</span></label> <input type="text" id="fname" name="fname" placeholder="Enter your  name" onblur="validate(1)"> </div>
@@ -197,13 +201,83 @@
                     <div class="row justify-content-between text-left">
                         <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Job title<span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="" onblur="validate(5)"> </div>
                     </div>
-                    <div class="row justify-content-between text-left">
-                        <div class="form-group col-12 flex-column d-flex"> <label class="form-control-label px-3">School<span class="text-danger"> *</span></label> <input type="text" id="ans" name="ans" placeholder="" onblur="validate(6)"> </div>
-                    </div>
-                    <div class="row justify-content-between text-left">
-                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">College<span class="text-danger"> *</span></label> <input type="text" id="fname" name="fname" placeholder="" onblur="validate(1)"> </div>
-                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">University<span class="text-danger"> *</span></label> <input type="text" id="lname" name="lname" placeholder="" onblur="validate(2)"> </div>
-                    </div>
+
+                    <div class="form-group multiple-form-group">
+				<label>School</label>
+
+				<div class="form-group input-group">
+					<textarea name="multiple[]" class="form-control" rows="3"></textarea>
+						<span class="input-group-btn"><button type="button" class="btn btn-default btn-add">+
+						</button></span>
+				</div>
+			</div>
+
+            <div class="form-group multiple-form-group">
+				<label>College</label>
+
+				<div class="form-group input-group">
+					<textarea name="multiple[]" class="form-control" rows="3"></textarea>
+						<span class="input-group-btn"><button type="button" class="btn btn-default btn-add">+
+						</button></span>
+				</div>
+			</div>
+                    <div class="form-group multiple-form-group">
+				<label>University</label>
+
+				<div class="form-group input-group">
+					<textarea name="multiple[]" class="form-control" rows="3"></textarea>
+						<span class="input-group-btn"><button type="button" class="btn btn-default btn-add">+
+						</button></span>
+				</div>
+			</div>
+            <script>
+                (function ($) {
+    $(function () {
+
+        var addFormGroup = function (event) {
+            event.preventDefault();
+
+            var $formGroup = $(this).closest('.form-group');
+            var $multipleFormGroup = $formGroup.closest('.multiple-form-group');
+            var $formGroupClone = $formGroup.clone();
+
+            $(this)
+                .toggleClass('btn-default btn-add btn-danger btn-remove')
+                .html('–');
+
+            $formGroupClone.find('input').val('');
+            $formGroupClone.insertAfter($formGroup);
+
+            var $lastFormGroupLast = $multipleFormGroup.find('.form-group:last');
+            if ($multipleFormGroup.data('max') <= countFormGroup($multipleFormGroup)) {
+                $lastFormGroupLast.find('.btn-add').attr('disabled', true);
+            }
+        };
+
+        var removeFormGroup = function (event) {
+            event.preventDefault();
+
+            var $formGroup = $(this).closest('.form-group');
+            var $multipleFormGroup = $formGroup.closest('.multiple-form-group');
+
+            var $lastFormGroupLast = $multipleFormGroup.find('.form-group:last');
+            if ($multipleFormGroup.data('max') >= countFormGroup($multipleFormGroup)) {
+                $lastFormGroupLast.find('.btn-add').attr('disabled', false);
+            }
+
+            $formGroup.remove();
+        };
+
+        var countFormGroup = function ($form) {
+            return $form.find('.form-group').length;
+        };
+
+        $(document).on('click', '.btn-add', addFormGroup);
+        $(document).on('click', '.btn-remove', removeFormGroup);
+
+    });
+})(jQuery);
+            </script>
                     
                     <div class="row justify-content-end">
                         <div class="form-group col-sm-6"> <button type="submit" class="btn-block btn-primary">Submit</button> </div>
