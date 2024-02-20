@@ -10,6 +10,8 @@
 
 📖 Google Scholar: https://scholar.google.com/citations?view_op=list_works&hl=en&user=ipE0E-8AAAAJ
 
+📝 Academia: https://juniv.academia.edu/RajanDasGupta
+
 📊 Web of Science: https://www.webofscience.com/wos/author/record/IQX-1463-2023
 
 🆔 ORCID: https://orcid.org/0000-0003-4065-743X
