@@ -56,8 +56,8 @@ interests:
 education:
   - area: M.Sc in Computer Science
     institution: Jahangirnahgar University
-    date_start: 2023-05-01
-    date_end: 2022-04-01
+    date_start: 2022-04-01
+    date_end: 2023-05-01
     summary: |2-
       - Conducted research on ML and NLP applications, publishing papers in IEEE and Springer conferences/journals.
       - Courses included:
@@ -81,28 +81,28 @@ work:
     date_end: ''
     summary: |
       Responsibilities include:
-      - Developed an Automated Banking Audit and Mortgage Approval system with LLMs, reducing validation times by 50% and improving accuracy by 20%.
-      - Built a Multimodal Intelligent chatbot integrating GPT-4, ResNet, and BERT with RLHF for improved customer support.
+      - Conducts user research to understand needs and behaviors through interviews, surveys, and testing.
+      - Works with teams to design user-focused solutions that improve product usability and experience.
   - position: Faculty of Computer Science
     company_name: PLAYPEN, Dhaka, BD
     company_url: https://www.playpen.edu.bd
     company_logo: ''
-    date_start: 2024-01-01
-    date_end: ''
+    date_start: 2023-08-01
+    date_end: 2024-09-01
     summary: |2-
       Responsibilities include:
-      - Taught Courses: COP 1800: Intro to Programming with Java, CGS 1060: Microcomputer Applications
-      - Taught algorithms to CS students to solve computational problems so that they can participate in ACM ICPC.
+      - Taught basic programming using Java, helping students understand how to create simple computer programs.
+      - Taught algorithms to students to solve computational problems so that they can participate in ACM ICPC.
   - position: UX Lead & Project Co-Ordinator
     company_name: Olivine Ltd.
     company_url: ''
     company_logo: ''
-    date_start: 2023-11-01
-    date_end: ''
+    date_start: 2022-01-01
+    date_end: 2023-07-31
     summary: |
       Responsibilities include:
-      - Developed an Automated Banking Audit and Mortgage Approval system with LLMs, reducing validation times by 50% and improving accuracy by 20%.
-      - Built a Multimodal Intelligent chatbot integrating GPT-4, ResNet, and BERT with RLHF for improved customer support.
+      - Guides the UX team and provides direction to ensure designs meet user needs and business goals.
+      - Plans and tracks project timelines, ensuring deliverables are met on time and within scope.
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
