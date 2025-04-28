@@ -44,7 +44,7 @@ jobs:
           ${{ runner.os }}-hugomod-
     - name: Setup Pages
       id: pages
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v3
     - name: Build with Hugo
       env:
         HUGO_ENVIRONMENT: production
