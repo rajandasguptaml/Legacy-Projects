@@ -1,4 +1,4 @@
-# archive
+# legacy-projects
 
 Undergraduate coursework, early web projects and old portfolio sites from 2021 to 2025, collected from
 25 separate repositories into one. Each folder keeps its original commit history (run `git log -- <folder>`).
