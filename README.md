@@ -51,3 +51,11 @@ history before merging:
 Only each repo's default branch was merged. Pet-Care, WT_Sp21_HTML_LAB3 and WT_Sp21_HTML_mid also had
 `gh-pages` branches (generated deploy copies), and the two Hugo repos had a second `master`/`Master` branch; those
 were not carried over.
+
+## Added 2026-11-23
+
+| Folder | Original repo | What it is | Year |
+|---|---|---|---|
+| portfolio-sites/ui-portfolio-2026 | rajandasgupta-UI-Portfolio | Next.js UI/UX portfolio (was live at rajandasgupta.vercel.app). A home directory committed by mistake (.vscode, .p2, .eclipse and other dotfiles) was removed from history. | 2026 |
+| portfolio-sites/ui-portfolio-2026-copy | rajandasgupta | Single-commit copy of the same portfolio | 2026 |
+| coursework/laravel-cv-master | Laravel_CV-master | Full Laravel project of the CV site (companion to coursework/laravel-cv) | 2022 |
